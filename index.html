@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mozilla hack night by raj</title>
+    <meta name="description" content="Hello, World! • A-Frame">
+    <script src="aframe-v0.3.2.min.js"></script>
+    <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-animation-component/master/dist/aframe-animation-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+   
+
+  <a-entity light="type: ambient; color: #222"></a-entity>
+
+  <a-entity light="type: directional; color: #EEE; intensity: 1" position="1 1 0"></a-entity>
+
+
+    <a-entity light="type: point; intensity: 1.5; distance: 100; decay: 2" position="-10 3 -8"></a-entity>
+
+    <a-sphere position="-35 3 -20" radius="18" roughness="0" src="img/sun.jpg" ><a-animation attribute="rotation"  dur="10000" repeat="indefinite" to="0 360 0"></a-animation></a-sphere>
+
+    <a-sphere position="-6 2 -10" radius="0.9" roughness="0.5" src="img/mercury.jpg" rotation="180 "><a-animation attribute="rotation" dur="10000" repeat="indefinite" to="0 360 0"></a-animation></a-sphere>
+
+    <a-sphere position="-2 2 -10" radius="1.0" roughness="0.5" src="img/venus.jpg"><a-animation attribute="rotation" dur="10000" repeat="indefinite" to="0 360 0"></a-animation></a-sphere>
+
+    <a-sphere position="4 2 -10" radius="1.9" roughness="0.5" src="img/earth.jpg" ><a-animation attribute="rotation" repeat="indefinite" dur="10000"to="0 360 0"></a-animation></a-sphere>
+
+    <a-sphere position="10 2 -10" radius="1.5" roughness="0.5" src="img/mars.jpg" rotation="-20 200 10"><a-animation attribute="rotation" dur="10000" repeat="indefinite" to="0 360 0"></a-animation></a-sphere>
+
+    <a-sphere position="20 2 -10" radius="4.6" roughness="0.5" src="img/jupiter.jpg"  rotation="-10 200 0"><a-animation attribute="rotation" dur="10000"repeat="indefinite" to="0 360 0"></a-animation></a-sphere>
+
+      <a-sky src="img/galaxy.jpg"></a-sky>
+<a-entity geometry="primitive: torus; radius: 20; radiusTubular: 0.01;segmentsTubular: 50"
+          material="color: #FFFFFF;opacity: 1.3" position="-35 2 -20" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+          <a-entity geometry="primitive: torus; radius: 17.3; radiusTubular: 0.01;segmentsTubular: 50"
+          material="color: #FFFFFF;opacity: 1.3" position="-35 2 -20" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+          <a-entity geometry="primitive: torus; radius: 15.1; radiusTubular: 0.01;segmentsTubular: 50"
+          material="color: #FFFFFF;opacity: 1.3" position="-35 2 -20" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+          <a-entity geometry="primitive: torus; radius: 23; radiusTubular: 0.01;segmentsTubular: 50"
+          material="color: #FFFFFF;opacity: 1.3" position="-35 2 -20" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+          <a-entity geometry="primitive: torus; radius: 27; radiusTubular: 0.01;segmentsTubular: 50"
+          material="color: #FFFFFF;opacity: 1.3" position="-35 2 -20" rotation="90 0 0" scale="2 2 0.1"></a-entity>
+
+
+      <a-entity position="-13 18 45">
+        <a-camera>
+           <!-- <a-cursor></a-cursor> -->
+        </a-camera>
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
